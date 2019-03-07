@@ -1,14 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../scss/UserCard.scss';
+import UserContactInfo from './UserContactInfo';
 
-class UserCard extends Component {
-  render() {
-    return (
-      <div className="UserCard">
-        {this.props.user.name}
-      </div>
-    );
-  }
+function UserCard (props) {
+  const {
+    address,
+    company,
+    email,
+    name,
+    username,
+    phone,
+    website
+  } = props.user;
+
+  return (
+    <section className="UserCard">
+      <h2>{name}</h2>
+      <p>{username}</p>
+
+      @ {company.name}
+
+      <p>{address.city}</p>
+
+      <UserContactInfo contactInfo={{address, email, phone, website}} />
+    </section>
+  );
 }
 
 export default UserCard;
