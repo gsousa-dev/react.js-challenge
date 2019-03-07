@@ -6,7 +6,9 @@ import '../scss/CardsContainer.scss';
 class CardsContainer extends Component {
   constructor(props) {
     super(props);
+    
     this.state = { users: [], fetchingUsers: false, errorFetchingUsers: null };
+
     this.filterUsers = this.filterUsers.bind(this);
   }
 
@@ -25,10 +27,11 @@ class CardsContainer extends Component {
 
   filterUsers(user) {
     const criteria = this.props.searchValue.toLowerCase();
+    const field = this.props.selectedFilterOption.toLowerCase();
 
-    return user.name.toLowerCase().includes(criteria)
-      || user.email.toLowerCase().includes(criteria)
-      || user.username.toLowerCase().includes(criteria)
+    if (!field) return true;
+ 
+    return user[field].toLowerCase().includes(criteria);
   }
 
   renderList() {
@@ -36,7 +39,7 @@ class CardsContainer extends Component {
       .filter(this.filterUsers)  
       .map(user => {
         return (
-          <li key={user.id}>
+          <li tabIndex="0" key={user.id}>
             <UserCard user={user} />
           </li>
         )
@@ -51,9 +54,9 @@ class CardsContainer extends Component {
 
   render() {
     return (
-      <div className="CardsContainer">
+      <section className="CardsContainer">
         { (this.state.fetchingUsers) ? 'Loading users...' : this.renderList() }
-      </div>
+      </section>
     );
   }
 }
