@@ -8,7 +8,7 @@ class SearchBar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isInvalidOption: 'disabled' };
+    this.state = { isInvalidOption: true };
 
     this.handleSearchValueChange = this.handleSearchValueChange.bind(this);
     this.handleFilterOptionChange = this.handleFilterOptionChange.bind(this);
@@ -19,7 +19,7 @@ class SearchBar extends Component {
   }
 
   handleFilterOptionChange(ev) {
-    this.setState({ isInvalidOption: (!ev.target.value) ? 'disabled' : '' });
+    this.setState({ isInvalidOption: !ev.target.value });
     this.props.onFilterOptionChange(ev.target.value);
   }
 
