@@ -1,0 +1,15 @@
+.UserCard {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 0 10px;
+
+  .generalInfo {
+    padding: 15px 0;
+
+    .username {
+      color: gray;
+    }
+  }
+}

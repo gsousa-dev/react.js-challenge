@@ -1,6 +1,8 @@
-import React from 'react';
+import React               from 'react';
+import UserContactInfo     from './UserContactInfo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../scss/UserCard.scss';
-import UserContactInfo from './UserContactInfo';
+
 
 function UserCard (props) {
   const {
@@ -15,12 +17,12 @@ function UserCard (props) {
 
   return (
     <section className="UserCard">
-      <h2>{name}</h2>
-      <p>{username}</p>
-
-      @ {company.name}
-
-      <p>{address.city}</p>
+      <div className="generalInfo">
+        <h2>{name}</h2>
+        <p className="username">{username}</p>
+        <p>Works @ {company.name}</p>
+        <p><FontAwesomeIcon icon="home" /> {address.city} </p>
+      </div>
 
       <UserContactInfo contactInfo={{address, email, phone, website}} />
     </section>

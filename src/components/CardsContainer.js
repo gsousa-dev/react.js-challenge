@@ -39,7 +39,7 @@ class CardsContainer extends Component {
       .filter(this.filterUsers)  
       .map(user => {
         return (
-          <li tabIndex="0" key={user.id}>
+          <li className="cardListItem" tabIndex="0" key={user.id}>
             <UserCard user={user} />
           </li>
         )
@@ -48,7 +48,7 @@ class CardsContainer extends Component {
     const noResults = (!this.state.errorFetchingUsers) ? 'No results.' : this.state.errorFetchingUsers;
 
     return (
-      (listItems.length) ? <ul>{listItems}</ul> : noResults
+      (listItems.length) ? <ul className="cardList">{listItems}</ul> : noResults
     )
   }
 

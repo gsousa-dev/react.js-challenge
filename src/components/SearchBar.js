@@ -26,8 +26,8 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="SearchBar">
-        <select onChange={this.handleFilterOptionChange}>
-          <option value="">Search users by:</option>
+        <select className={`item filterBy`} onChange={this.handleFilterOptionChange}>
+          <option value="">Filter by:</option>
           {this.filterOptions.map((option, index) => (
           <option key={index} value={option}>
             {option}
@@ -36,6 +36,7 @@ class SearchBar extends Component {
         </select>
 
         <input
+          className={`item searchInput`}
           type="search"
           placeholder="Search.."
           value={this.props.searchValue}

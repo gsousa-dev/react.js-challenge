@@ -1,0 +1,12 @@
+.CardsContainer {
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+
+    .cardListItem {
+      margin-bottom: 30px;
+    }
+  }
+
+}
