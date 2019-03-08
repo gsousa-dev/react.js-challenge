@@ -1,8 +1,8 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## DEMO
 
 https://outofs1gh7.github.io/cartrack-challenge/
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
