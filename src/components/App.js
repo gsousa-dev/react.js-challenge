@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import SearchBar            from './SearchBar';
 import CardsContainer       from './CardsContainer';
+import { library }          from '@fortawesome/fontawesome-svg-core'
+import { 
+  faGlobeAmericas,
+  faHome, faPhone,
+  faEnvelope }              from '@fortawesome/free-solid-svg-icons';
 import '../scss/App.scss';
+
+library.add(faGlobeAmericas, faPhone, faEnvelope, faHome);
 
 class App extends Component {
   constructor(props) {
@@ -24,15 +31,17 @@ class App extends Component {
   render() {
     return (
       <main className="App">
-        <SearchBar
-          searchValue={this.state.searchValue}
-          onSearchValueChange={this.handleSearchValueChange}
-          onFilterOptionChange={this.handleFilterOptionChange}
-        />
-        <CardsContainer
-          searchValue={this.state.searchValue}
-          selectedFilterOption={this.state.selectedFilterOption}
-        />
+        <div className="container">
+          <SearchBar
+            searchValue={this.state.searchValue}
+            onSearchValueChange={this.handleSearchValueChange}
+            onFilterOptionChange={this.handleFilterOptionChange}
+          />
+          <CardsContainer
+            searchValue={this.state.searchValue}
+            selectedFilterOption={this.state.selectedFilterOption}
+          />
+        </div>
       </main>
     );
   }
