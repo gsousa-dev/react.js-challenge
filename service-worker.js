@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/outofs1gh7.github.io/precache-manifest.62bfe37ad0c9bcb585c7410884898e17.js"
+  "/cartrack-challenge/precache-manifest.dacad2e411eb38005589ef115500b2c6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/outofs1gh7.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/cartrack-challenge/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
