@@ -1,6 +1,6 @@
 {
-  "short_name": "cartrack-challenge",
-  "name": "Cartrack's Small React Application Challenge",
+  "short_name": "react.js-challenge",
+  "name": "React.js Challenge",
   "icons": [
     {
       "src": "favicon.ico",

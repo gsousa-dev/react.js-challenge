@@ -1,15 +1,15 @@
 {
-  "main.css": "/cartrack-challenge/static/css/main.62c170cc.chunk.css",
-  "main.js": "/cartrack-challenge/static/js/main.e1166a29.chunk.js",
-  "main.js.map": "/cartrack-challenge/static/js/main.e1166a29.chunk.js.map",
-  "runtime~main.js": "/cartrack-challenge/static/js/runtime~main.6be82430.js",
-  "runtime~main.js.map": "/cartrack-challenge/static/js/runtime~main.6be82430.js.map",
-  "static/css/2.8afcf6de.chunk.css": "/cartrack-challenge/static/css/2.8afcf6de.chunk.css",
-  "static/js/2.de5a392e.chunk.js": "/cartrack-challenge/static/js/2.de5a392e.chunk.js",
-  "static/js/2.de5a392e.chunk.js.map": "/cartrack-challenge/static/js/2.de5a392e.chunk.js.map",
-  "index.html": "/cartrack-challenge/index.html",
-  "precache-manifest.dacad2e411eb38005589ef115500b2c6.js": "/cartrack-challenge/precache-manifest.dacad2e411eb38005589ef115500b2c6.js",
-  "service-worker.js": "/cartrack-challenge/service-worker.js",
-  "static/css/2.8afcf6de.chunk.css.map": "/cartrack-challenge/static/css/2.8afcf6de.chunk.css.map",
-  "static/css/main.62c170cc.chunk.css.map": "/cartrack-challenge/static/css/main.62c170cc.chunk.css.map"
+  "main.css": "/react.js-challenge/static/css/main.62c170cc.chunk.css",
+  "main.js": "/react.js-challenge/static/js/main.925e85e3.chunk.js",
+  "main.js.map": "/react.js-challenge/static/js/main.925e85e3.chunk.js.map",
+  "runtime~main.js": "/react.js-challenge/static/js/runtime~main.cb411118.js",
+  "runtime~main.js.map": "/react.js-challenge/static/js/runtime~main.cb411118.js.map",
+  "static/css/2.8afcf6de.chunk.css": "/react.js-challenge/static/css/2.8afcf6de.chunk.css",
+  "static/js/2.de5a392e.chunk.js": "/react.js-challenge/static/js/2.de5a392e.chunk.js",
+  "static/js/2.de5a392e.chunk.js.map": "/react.js-challenge/static/js/2.de5a392e.chunk.js.map",
+  "index.html": "/react.js-challenge/index.html",
+  "precache-manifest.1228bdd64d75ba2c2c9b900854d5d097.js": "/react.js-challenge/precache-manifest.1228bdd64d75ba2c2c9b900854d5d097.js",
+  "service-worker.js": "/react.js-challenge/service-worker.js",
+  "static/css/2.8afcf6de.chunk.css.map": "/react.js-challenge/static/css/2.8afcf6de.chunk.css.map",
+  "static/css/main.62c170cc.chunk.css.map": "/react.js-challenge/static/css/main.62c170cc.chunk.css.map"
 }

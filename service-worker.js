@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cartrack-challenge/precache-manifest.dacad2e411eb38005589ef115500b2c6.js"
+  "/react.js-challenge/precache-manifest.1228bdd64d75ba2c2c9b900854d5d097.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cartrack-challenge/index.html", {
+workbox.routing.registerNavigationRoute("/react.js-challenge/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
